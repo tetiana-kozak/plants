@@ -121,7 +121,7 @@ header .navbar .main-navbar .layout .actions .wrapper .navigation {
 header .navbar .main-navbar .layout .actions .wrapper .navigation .nav-bar {
   padding: 0 15px;
   width: 100vw;
-  height: calc(100vh - 70px - 55px);
+  height: calc(100vh - 55px - 70px);
   background-color: #0c4b35;
   display: flex;
   flex-direction: column;
@@ -156,16 +156,16 @@ header .navbar .main-navbar .layout .actions .wrapper:hover .navigation {
 
 .main {
   background-color: #c4c4c4;
-  height: calc(100vh - 85px - 59px);
+  height: 240px;
 }
 
 /* laptop */
 /* desktop */
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 -15px;
   }
   header .navbar .top-navbar .layout {
     height: 59px;
@@ -261,5 +261,8 @@ header .navbar .main-navbar .layout .actions .wrapper:hover .navigation {
   }
   header .navbar .main-navbar .layout .actions .wrapper .navigation .nav-bar .item a:hover svg path {
     fill: #00730c;
+  }
+  .main {
+    height: 720px;
   }
 }/*# sourceMappingURL=style.css.map */

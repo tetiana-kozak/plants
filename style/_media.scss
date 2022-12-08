@@ -1,0 +1,149 @@
+/* laptop */
+@media (min-width: 992px) {
+}
+
+/* desktop */
+@media (min-width: 1200px) {
+  .container {
+    max-width: calc(1200px + 30px);
+    margin: 0 auto;
+    padding: 0 -15px;
+  }
+
+  header .navbar {
+    .top-navbar .layout {
+      height: $header-top_height-l;
+
+      .actions li {
+        margin-right: 30px;
+
+        a {
+          display: flex;
+          align-items: center;
+
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 25px;
+
+          .action-descr {
+            padding-left: 10px;
+            display: block;
+            color: $typography-white;
+          }
+        }
+      }
+
+      .lang {
+        .dropdown {
+          font-size: 14px;
+          line-height: 25px;
+          svg {
+            width: 12px;
+            height: auto;
+          }
+        }
+      }
+    }
+    .main-navbar {
+
+      .layout {
+        height: $header-main_height-l;
+
+        .logo {
+          a {
+            img {
+            }
+          }
+        }
+        .actions {
+          display: flex;
+          flex-direction: row-reverse;
+          
+
+          .button {
+            width: 170px;
+            height: 50px;
+
+            &::after {
+              content: "Call Us";
+              padding-left: 10px;
+            }
+
+            svg {
+            }
+          }
+
+          .wrapper {
+            display: flex;
+            margin-left: 0;
+            .burger {
+              display: none;
+  
+              
+              
+            }
+
+            .navigation {
+              display: block;
+              position: relative;
+              top: 0;
+              right: 0;
+              display: flex;
+              align-items: center;
+              padding: 0;
+
+              .nav-bar {
+                padding: 0;
+                width: fit-content;
+                height: fit-content;
+                background-color: $main-bgr-color;
+                // display: flex;
+                flex-direction: row;
+                margin-right: 100px;
+                .item {
+                  margin-left: 44px;
+                  &:first-child {
+                    margin-left: 0px;
+                  }
+                  a {
+                    color: $typography-black-color;
+                    opacity: 1;
+                    display: flex;
+                    // align-items: center;
+                    line-height: 50px;
+                    border-bottom:none;
+                    font-weight: 700;
+                    
+                    .title {
+                      margin-right: 5px;
+                    }
+
+                    svg {
+                      path {
+                        fill: $typography-black-color;
+                      }
+                    }
+
+                    &:hover {
+                      color: $theme-main-color;
+                      svg {
+                        path {
+                          fill: $theme-main-color;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+  .main {
+    height: 720px;
+  }
+}
