@@ -20,7 +20,6 @@
         a {
           display: flex;
           align-items: center;
-
           font-weight: 400;
           font-size: 14px;
           line-height: 25px;
@@ -37,6 +36,7 @@
         .dropdown {
           font-size: 14px;
           line-height: 25px;
+
           svg {
             width: 12px;
             height: auto;
@@ -45,104 +45,86 @@
       }
     }
     .main-navbar {
-
       .layout {
         height: $header-main_height-l;
+      }
 
-        .logo {
-          a {
-            img {
-            }
+      .actions {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .button {
+          width: 170px;
+          height: 50px;
+
+          &::after {
+            content: "Call Us";
+            padding-left: 10px;
           }
         }
-        .actions {
+
+        .wrapper {
           display: flex;
-          flex-direction: row-reverse;
-          
+          margin-left: 0;
 
-          .button {
-            width: 170px;
-            height: 50px;
-
-            &::after {
-              content: "Call Us";
-              padding-left: 10px;
-            }
-
-            svg {
-            }
+          .burger {
+            display: none;
           }
 
-          .wrapper {
+          .navigation {
+            display: block;
+            position: relative;
+            top: 0;
+            right: 0;
             display: flex;
-            margin-left: 0;
-            .burger {
-              display: none;
-  
-              
-              
-            }
+            align-items: center;
+            padding: 0;
 
-            .navigation {
-              display: block;
-              position: relative;
-              top: 0;
-              right: 0;
-              display: flex;
-              align-items: center;
+            .nav-bar {
               padding: 0;
+              width: fit-content;
+              height: fit-content;
+              background-color: $main-bgr-color;
+              flex-direction: row;
+              margin-right: 100px;
 
-              .nav-bar {
-                padding: 0;
-                width: fit-content;
-                height: fit-content;
-                background-color: $main-bgr-color;
-                // display: flex;
-                flex-direction: row;
-                margin-right: 100px;
-                .item {
-                  margin-left: 44px;
-                  &:first-child {
-                    margin-left: 0px;
+              .item {
+                margin-left: 44px;
+                &:first-child {
+                  margin-left: 0px;
+                }
+
+                a {
+                  color: $typography-black-color;
+                  opacity: 1;
+                  display: flex;
+                  line-height: 50px;
+                  border-bottom: none;
+                  font-weight: 700;
+
+                  .title {
+                    margin-right: 5px;
                   }
-                  a {
-                    color: $typography-black-color;
-                    opacity: 1;
-                    display: flex;
-                    // align-items: center;
-                    line-height: 50px;
-                    border-bottom:none;
-                    font-weight: 700;
-                    
-                    .title {
-                      margin-right: 5px;
-                    }
 
-                    svg {
-                      path {
-                        fill: $typography-black-color;
-                      }
-                    }
+                  svg path {
+                    fill: $typography-black-color;
+                  }
 
-                    &:hover {
-                      color: $theme-main-color;
-                      svg {
-                        path {
-                          fill: $theme-main-color;
-                        }
-                      }
+                  &:hover {
+                    color: $theme-main-color;
+                    svg path {
+                      fill: $theme-main-color;
                     }
                   }
                 }
               }
             }
-
           }
-
         }
       }
     }
   }
+
   .main {
     height: 720px;
   }
