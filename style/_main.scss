@@ -1,4 +1,78 @@
+.container-fluid {
+  width: 100%;
+}
+
 .main {
-  background-color: $image-color;
-  height: 240px;
+  // background-color: $image-color;
+  // height: 240px;
+  .general{
+    background: $gradient-horisontal;
+    display: flex;
+    flex-direction: column-reverse;
+    // height: 500px;
+    color: $typography-black-color;
+
+    .content {
+      padding: 0 15px;
+      .subtitle {
+        font-weight: 700;
+        font-size: 14px;
+        padding-top: 48px;
+        display: flex;
+        align-items: center;
+        &::before {
+          content: url(../assets/leaves.svg);
+          padding-right: 5px;
+        }
+      }
+
+      .title {
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 700;
+        padding-top: 10px;
+
+        span {
+          color: $theme-main-color;
+        }
+      }
+
+      .paragraph {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        padding-top: 15px;
+      }
+
+      .buttons {
+        padding-top: 40px;
+        .button {
+
+        }
+
+        .quate {
+          
+        }
+
+        .link {
+
+        }
+      }
+
+      .tags-s {
+
+        .tag {
+
+          span {
+
+          }
+        }
+      }
+    }
+
+    .image {
+
+    }
+
+  }
 }

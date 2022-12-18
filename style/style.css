@@ -153,11 +153,48 @@ header .main-navbar .layout .actions .wrapper:hover .navigation {
   display: block;
 }
 
-.main {
-  background-color: #c4c4c4;
-  height: 240px;
+.container-fluid {
+  width: 100%;
 }
 
+.main .general {
+  background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
+  display: flex;
+  flex-direction: column-reverse;
+  color: #212529;
+}
+.main .general .content {
+  padding: 0 15px;
+}
+.main .general .content .subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 48px;
+  display: flex;
+  align-items: center;
+}
+.main .general .content .subtitle::before {
+  content: url(../assets/leaves.svg);
+  padding-right: 5px;
+}
+.main .general .content .title {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.main .general .content .title span {
+  color: #00730c;
+}
+.main .general .content .paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 15px;
+}
+.main .general .content .buttons {
+  padding-top: 40px;
+}
 /* laptop */
 /* desktop */
 @media (min-width: 1200px) {
@@ -261,7 +298,39 @@ header .main-navbar .layout .actions .wrapper:hover .navigation {
   header .navbar .main-navbar .actions .wrapper .navigation .nav-bar .item a:hover svg path {
     fill: #00730c;
   }
-  .main {
-    height: 720px;
+  .main .general {
+    flex-direction: row;
+  }
+  .main .general .content {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .main .general .content .layout {
+    width: 585px;
+  }
+  .main .general .content .subtitle {
+    font-size: 16px;
+    padding-top: 0;
+  }
+  .main .general .content .title {
+    font-size: 58px;
+    line-height: 79px;
+    font-weight: 800;
+    padding-top: 20px;
+  }
+  .main .general .content .paragraph {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 20px;
+    color: #676767;
+  }
+  .main .general .content .buttons {
+    padding-top: 40px;
+  }
+  .main .general .image {
+    padding-top: 46px;
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
