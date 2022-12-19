@@ -24,7 +24,12 @@ $header-main_height-l: 85px;
 
 $gradient-horisontal: linear-gradient(
   79.58deg,
-  rgba(0, 115, 12, 0.81) -39.14%,
+  rgba(0, 115, 12, 0.579) -39.14%,
   rgba(251, 246, 238, 0) 90.23%
 );
-$gradient-vertical:linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+$gradient-horisontal-light: linear-gradient(
+  72.71deg,
+  #00730c -83.5%,
+  #f9f9f9 93.84%
+);
+$gradient-vertical: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);

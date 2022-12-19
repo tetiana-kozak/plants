@@ -2,77 +2,101 @@
   width: 100%;
 }
 
-.main {
-  // background-color: $image-color;
-  // height: 240px;
-  .general{
-    background: $gradient-horisontal;
-    display: flex;
-    flex-direction: column-reverse;
-    // height: 500px;
-    color: $typography-black-color;
+.general {
+  background: url(../assets/pictures/flower-bg.png) no-repeat,
+    $gradient-horisontal;
+  background-position: 0 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  color: $typography-black-color;
 
-    .content {
-      padding: 0 15px;
-      .subtitle {
-        font-weight: 700;
-        font-size: 14px;
-        padding-top: 48px;
-        display: flex;
-        align-items: center;
-        &::before {
-          content: url(../assets/leaves.svg);
-          padding-right: 5px;
-        }
+  .content {
+    padding: 0 15px;
+    .subtitle {
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: url(../assets/leaves.svg);
+        padding-right: 5px;
+      }
+    }
+
+    .title {
+      font-size: 28px;
+      line-height: 38px;
+      font-weight: 700;
+      margin-top: 10px;
+
+      span {
+        color: $theme-main-color;
+      }
+    }
+
+    .paragraph {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 15px;
+    }
+
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .button {
+        @include button;
+        padding: 0;
+        width: calc(100% - 44px);
+        height: 44px;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: capitalize;
       }
 
-      .title {
-        font-size: 28px;
-        line-height: 38px;
-        font-weight: 700;
-        padding-top: 10px;
+      .link {
+        margin-top: 19px;
+        font-weight: 600;
+        font-size: 14px;
+        color: $theme-main-color;
+
+        &::after {
+          content: url(../assets/arrow-next.svg);
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .tags-s {
+      display: flex;
+      justify-content: flex-end;
+      color: $typography-black-color;
+      margin-bottom: 35px;
+      margin-top: 40px;
+
+      .tag {
+        width: calc(100% / 2 - 60px);
+        height: 32px;
+        background: $gradient-vertical;
+        border-radius: 16px;
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 32px;
+        text-align: center;
 
         span {
-          color: $theme-main-color;
-        }
-      }
-
-      .paragraph {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        padding-top: 15px;
-      }
-
-      .buttons {
-        padding-top: 40px;
-        .button {
-
-        }
-
-        .quate {
-          
-        }
-
-        .link {
-
-        }
-      }
-
-      .tags-s {
-
-        .tag {
-
-          span {
-
-          }
+          font-weight: 700;
+          font-size: 12px;
         }
       }
     }
 
-    .image {
-
+    .tags-l {
+      display: none;
     }
-
   }
 }
