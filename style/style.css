@@ -179,18 +179,9 @@ header .main-navbar .layout .actions .wrapper:hover .navigation {
   padding-right: 5px;
 }
 .general .content .title {
-  font-size: 28px;
-  line-height: 38px;
-  font-weight: 700;
   margin-top: 10px;
 }
-.general .content .title span {
-  color: #00730c;
-}
 .general .content .paragraph {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
   margin-top: 15px;
 }
 .general .content .buttons {
@@ -249,6 +240,85 @@ header .main-navbar .layout .actions .wrapper:hover .navigation {
 }
 .general .content .tags-l {
   display: none;
+}
+
+.row {
+  display: flex;
+  margin: 0 -15px;
+}
+
+[class*=col-] {
+  padding: 0 15px;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+section .title {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+}
+section .title span {
+  color: #00730c;
+}
+section .paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.services {
+  margin-top: 50px;
+}
+.services .title {
+  text-align: center;
+}
+.services .paragraph {
+  text-align: center;
+  color: #676767;
+}
+.services .cards {
+  margin-top: 30px;
+}
+.services .cards .card {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
+}
+.services .cards .card:last-child {
+  margin-bottom: 0;
+}
+.services .cards .card .content {
+  margin-left: 20px;
+}
+.services .cards .card .content .title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+.services .cards .card .content .description {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
 }
 
 /* laptop */
