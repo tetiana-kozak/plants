@@ -18,6 +18,16 @@ body li {
   padding: 0 15px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+[class*=col-] {
+  padding: 0 15px;
+}
+
 header .top-navbar {
   background-color: #0c4b35;
 }
@@ -242,25 +252,6 @@ header .main-navbar .layout .actions .wrapper:hover .navigation {
   display: none;
 }
 
-.row {
-  display: flex;
-  margin: 0 -15px;
-}
-
-[class*=col-] {
-  padding: 0 15px;
-}
-
-.col-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.col-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
@@ -294,7 +285,6 @@ section .paragraph {
   margin-top: 30px;
 }
 .services .cards .card {
-  display: flex;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
@@ -324,6 +314,10 @@ section .paragraph {
 /* laptop */
 /* desktop */
 @media (min-width: 1200px) {
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
   .container {
     max-width: 1230px;
     margin: 0 auto;
@@ -442,14 +436,9 @@ section .paragraph {
     margin-top: 0;
   }
   .general .content .title {
-    font-size: 45px;
-    line-height: 55px;
-    font-weight: 800;
     margin-top: 10px;
   }
   .general .content .paragraph {
-    font-size: 16px;
-    line-height: 30px;
     margin-top: 10px;
     color: #676767;
   }
@@ -522,6 +511,35 @@ section .paragraph {
   .general .image {
     width: 50%;
     padding-top: 46px;
+  }
+  section .title {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 800;
+  }
+  section .title span {
+    color: #00730c;
+  }
+  section .paragraph {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .services {
+    margin-top: 100px;
+  }
+  .services .paragraph {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .services .cards {
+    margin-top: 50px;
+    row-gap: 30px;
+  }
+  .services .cards .card {
+    padding: 60px 42px;
+  }
+  .services .cards .card:last-child {
+    margin-bottom: 0;
   }
 }
 /* desktop - XL */
