@@ -21,8 +21,6 @@
 
   //HEADER
 
-  
-
   header .navbar {
     .top-navbar .layout {
       height: $header-top_height-l;
@@ -139,6 +137,10 @@
   }
 
   // MAIN GENERAL SECTION
+
+  .main {
+    row-gap: 100px;
+  }
 
   .general {
     flex-direction: row;
@@ -263,8 +265,6 @@
   }
 
   .services {
-    margin-top: 100px;
-
     .title {
       margin-bottom: 30px;
     }
