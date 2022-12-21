@@ -186,3 +186,37 @@ section {
     }
   }
 }
+
+.experience {
+  .images {
+    position: relative;
+    height: fit-content;
+    .bg-rectangle {
+      width: 55%;
+      height: 63%;
+      background: $theme-main-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .img-main {
+      position: relative;
+      padding: 12px 42px 0 12px;
+      z-index: 10;
+      width: 100%;
+      margin-bottom: calc(94 / 462) * 100%;
+    }
+    .img-front {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 20;
+      width: calc(241 / 345) * 100%;
+    }
+  }
+
+  .content {
+
+  }
+}
