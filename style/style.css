@@ -276,6 +276,7 @@ section .paragraph {
 }
 .services .title {
   text-align: center;
+  margin-bottom: 15px;
 }
 .services .paragraph {
   text-align: center;
@@ -285,6 +286,7 @@ section .paragraph {
   margin-top: 30px;
 }
 .services .cards .card {
+  display: flex;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
@@ -312,6 +314,12 @@ section .paragraph {
 }
 
 /* laptop */
+@media (min-width: 780px) {
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 /* desktop */
 @media (min-width: 1200px) {
   .col-3 {
@@ -527,6 +535,9 @@ section .paragraph {
   .services {
     margin-top: 100px;
   }
+  .services .title {
+    margin-bottom: 30px;
+  }
   .services .paragraph {
     width: 1000px;
     margin: 0 auto;
@@ -536,10 +547,32 @@ section .paragraph {
     row-gap: 30px;
   }
   .services .cards .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 60px 42px;
+    margin-bottom: 0;
+    height: 366px;
   }
   .services .cards .card:last-child {
     margin-bottom: 0;
+  }
+  .services .cards .card .image {
+    width: 70px;
+    margin-bottom: 50px;
+  }
+  .services .cards .card .content {
+    margin-left: 0;
+  }
+  .services .cards .card .content .title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .services .cards .card .content .description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 /* desktop - XL */
@@ -558,5 +591,8 @@ section .paragraph {
   }
   .general .content .tags-l {
     margin-top: 50px;
+  }
+  .services {
+    background: url(../assets/bg-leaves.svg) 100% 50% no-repeat;
   }
 }/*# sourceMappingURL=style.css.map */

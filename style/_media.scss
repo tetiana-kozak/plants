@@ -1,13 +1,17 @@
 /* laptop */
-@media (min-width: 992px) {
+@media (min-width: 780px) {
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 /* desktop */
 @media (min-width: 1200px) {
   .col-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 
   .container {
     max-width: calc(1200px + 30px);
@@ -16,6 +20,8 @@
   }
 
   //HEADER
+
+  
 
   header .navbar {
     .top-navbar .layout {
@@ -154,15 +160,10 @@
       }
 
       .title {
-        // font-size: 45px;
-        // line-height: 55px;
-        // font-weight: 800;
         margin-top: 10px;
       }
 
       .paragraph {
-        // font-size: 16px;
-        // line-height: 30px;
         margin-top: 10px;
         color: $typography-gray;
       }
@@ -244,98 +245,87 @@
     }
   }
 
-
   section {
-
-    .title{
-      // font-size: 28px;
-      // line-height: 38px;
-      // font-weight: 700;
-  
+    .title {
       font-size: 45px;
       line-height: 55px;
       font-weight: 800;
-  
+
       span {
         color: $theme-main-color;
       }
     }
-  
+
     .paragraph {
-      // font-size: 14px;
-      // line-height: 22px;
-  
       font-size: 16px;
       line-height: 30px;
-      // margin-top: 10px;
     }
   }
-  
+
   .services {
     margin-top: 100px;
-  
+
     .title {
-      // text-align: center;
+      margin-bottom: 30px;
     }
     .paragraph {
-      // text-align: center;
-      // color: $typography-gray;
       width: 1000px;
       margin: 0 auto;
-      
     }
-  
+
     .cards {
       margin-top: 50px;
-      // display: flex;
-      // flex-wrap: wrap;
       row-gap: 30px;
-      // column-gap: 30px;
-      // margin: 0 -15px;
-      
-      // padding: 0 15px;
+
       .card {
-        // display: flex;
-        // flex-direction: column;
-        // max-width: calc(100% / 4);
-        // flex: 0 0 25%;
-        // max-width: 25%;
-        // margin-bottom: 0;
-        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 60px 42px;
-        // box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-        // border-radius: 10px;
-        
-        &:last-child{
+        margin-bottom: 0;
+        height: 366px;
+
+        &:last-child {
           margin-bottom: 0;
         }
-  
-        .image {
-  
-        }
-        // .content {
-        //   margin-left: 20px;
-        //   .title {
-        //     text-align: left;
-        //     font-weight: 700;
-        //     font-size: 16px;
-        //     line-height: 22px;
-        //     padding-bottom: 10px;
+
+        // &:hover{
+        //   background: $theme-main-color;
+        //   color: $typography-white;
+        //   cursor: pointer;
+        //   transition: all ease-in-out .2s;
+
+        //   .description{
+        //     color: $typography-white;
         //   }
-  
-        //   .description {
-        //     text-align: left;
-        //     font-weight: 400;
-        //     font-size: 14px;
-        //     line-height: 22px;
-        //     color: $typography-gray;
+
+        //   .image {
+
         //   }
         // }
+
+        .image {
+          width: 70px;
+          margin-bottom: 50px;
+        }
+        .content {
+          margin-left: 0;
+          .title {
+            text-align: center;
+            font-size: 20px;
+            line-height: 30px;
+          }
+
+          .description {
+            text-align: center;
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
       }
     }
   }
 }
-
 
 /* desktop - XL */
 
@@ -345,7 +335,6 @@
       font-size: 58px;
       line-height: 79px;
       margin-top: 20px;
-      
     }
 
     .paragraph {
@@ -360,5 +349,8 @@
     .tags-l {
       margin-top: 50px;
     }
+  }
+  .services {
+    background: url(../assets/bg-leaves.svg) 100% 50% no-repeat;
   }
 }
