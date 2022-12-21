@@ -631,4 +631,7 @@ section .paragraph {
   .services {
     background: url(../assets/bg-leaves.svg) 100% 50% no-repeat;
   }
+  .experience {
+    background: url(../assets/BG_Img.svg) 0 50% no-repeat;
+  }
 }/*# sourceMappingURL=style.css.map */

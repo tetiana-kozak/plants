@@ -327,7 +327,7 @@
   }
 
   .experience {
-     .col-6 {
+    .col-6 {
       flex: 0 0 50%;
       max-width: 50%;
     }
@@ -359,5 +359,8 @@
   }
   .services {
     background: url(../assets/bg-leaves.svg) 100% 50% no-repeat;
+  }
+  .experience {
+    background: url(../assets/BG_Img.svg) 0 50% no-repeat;
   }
 }
