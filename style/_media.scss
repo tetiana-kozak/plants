@@ -249,8 +249,8 @@
 
   section {
     .title {
-      font-size: 45px;
-      line-height: 55px;
+      font-size: 35px;
+      line-height: 45px;
       font-weight: 800;
 
       span {
@@ -289,21 +289,6 @@
           margin-bottom: 0;
         }
 
-        // &:hover{
-        //   background: $theme-main-color;
-        //   color: $typography-white;
-        //   cursor: pointer;
-        //   transition: all ease-in-out .2s;
-
-        //   .description{
-        //     color: $typography-white;
-        //   }
-
-        //   .image {
-
-        //   }
-        // }
-
         .image {
           width: 70px;
           margin-bottom: 50px;
@@ -331,6 +316,57 @@
       flex: 0 0 50%;
       max-width: 50%;
     }
+
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        margin-bottom: 25px;
+        margin-top: 0;
+        text-align: left;
+      }
+
+      .paragraph {
+        &:first-of-type {
+          margin-bottom: 20px;
+        }
+      }
+
+      .cards {
+        margin-top: 40px;
+        .card {
+          box-shadow: none;
+          padding: 15px 0 15px 30px;
+          flex-direction: row;
+          align-items: center;
+
+          .icon {
+          }
+
+          .text {
+            font-size: 24px;
+            line-height: 33px;
+            margin-top: 0;
+            text-align: left;
+            margin-left: 20px;
+          }
+        }
+      }
+
+      button {
+        margin: 0;
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 13px 35px;
+
+        &:hover {
+          @include button-hover;
+        }
+      }
+    }
   }
 }
 
@@ -339,8 +375,8 @@
 @media (min-width: 1600px) {
   .general .content {
     .title {
-      font-size: 58px;
-      line-height: 79px;
+      font-size: 50px;
+      line-height: 65px;
       margin-top: 20px;
     }
 

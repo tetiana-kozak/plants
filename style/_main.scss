@@ -152,6 +152,7 @@ section {
 
   .cards {
     margin-top: 30px;
+    row-gap: 20px;
     .card {
       display: flex;
       padding: 20px;
@@ -217,6 +218,54 @@ section {
   }
 
   .content {
+    .title {
+      margin-bottom: 15px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .paragraph {
+      color: $typography-gray;
+      &:first-of-type {
+        margin-bottom: 22px;
+      }
+    }
 
+    .cards {
+      margin-top: 40px;
+      display: flex;
+      row-gap: 30px;
+      .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .card {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 5px;
+
+        .icon {
+          height: 50px;
+        }
+
+        .text {
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          margin-top: 5px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    button {
+      margin: 0 auto;
+      margin-top: 30px;
+      @include button;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px 30px;
+    }
   }
 }

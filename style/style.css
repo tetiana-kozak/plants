@@ -287,6 +287,7 @@ section .paragraph {
 }
 .services .cards {
   margin-top: 30px;
+  row-gap: 20px;
 }
 .services .cards .card {
   display: flex;
@@ -345,6 +346,59 @@ section .paragraph {
   z-index: 20;
   width: 69.8550724638%;
 }
+.experience .content .title {
+  margin-bottom: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+.experience .content .paragraph {
+  color: #676767;
+}
+.experience .content .paragraph:first-of-type {
+  margin-bottom: 22px;
+}
+.experience .content .cards {
+  margin-top: 40px;
+  display: flex;
+  row-gap: 30px;
+}
+.experience .content .cards .col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.experience .content .cards .card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+}
+.experience .content .cards .card .icon {
+  height: 50px;
+}
+.experience .content .cards .card .text {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 700;
+}
+.experience .content button {
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #00730c;
+  border: 1px solid #00730c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 30px;
+}
+
 /* laptop */
 @media (min-width: 780px) {
   .services .col-6 {
@@ -556,8 +610,8 @@ section .paragraph {
     padding-top: 46px;
   }
   section .title {
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 35px;
+    line-height: 45px;
     font-weight: 800;
   }
   section .title span {
@@ -610,12 +664,59 @@ section .paragraph {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .experience .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .experience .content .title {
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: left;
+  }
+  .experience .content .paragraph:first-of-type {
+    margin-bottom: 20px;
+  }
+  .experience .content .cards {
+    margin-top: 40px;
+  }
+  .experience .content .cards .card {
+    box-shadow: none;
+    padding: 15px 0 15px 30px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .experience .content .cards .card .text {
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .experience .content button {
+    margin: 0;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 13px 35px;
+  }
+  .experience .content button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #00730c;
+    transition: all ease-in-out 0.2s;
+  }
+  .experience .content button:hover svg path {
+    fill: #00730c;
+    transition: all ease-in-out 0.2s;
+  }
 }
 /* desktop - XL */
 @media (min-width: 1600px) {
   .general .content .title {
-    font-size: 58px;
-    line-height: 79px;
+    font-size: 50px;
+    line-height: 65px;
     margin-top: 20px;
   }
   .general .content .paragraph {
