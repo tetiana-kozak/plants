@@ -368,6 +368,65 @@
       }
     }
   }
+  .why-choose-us {
+    .layout {
+      padding: 100px 0;
+    }
+
+    .col-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .background {
+      background: none;
+    }
+
+    .image {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      img {
+      }
+    }
+
+    .content {
+      text-align: left;
+
+      .title {
+      }
+
+      .paragraph {
+        margin: 30px 0 50px;
+      }
+
+      .tags {
+        .tag {
+          .icon {
+          }
+          .description {
+            padding-left: 20px;
+          }
+        }
+      }
+      .button {
+        margin: 0;
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 13px 35px;
+
+        &:hover {
+          @include button-hover;
+        }
+      }
+    }
+  }
 }
 
 /* desktop - XL */
@@ -393,10 +452,19 @@
       margin-top: 50px;
     }
   }
+
   .services {
     background: url(../assets/bg-leaves.svg) 100% 50% no-repeat;
   }
+
   .experience {
     background: url(../assets/BG_Img.svg) 0 50% no-repeat;
+  }
+
+  .why-choose-us {
+    .background {
+      background: url(../assets/pictures/pngegg-bg.png) 0 100% no-repeat,
+        url(../assets/pictures/pngegg-bg-1.png) 100% 0 no-repeat;
+    }
   }
 }

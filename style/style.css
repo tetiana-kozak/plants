@@ -399,6 +399,61 @@ section .paragraph {
   padding: 10px 30px;
 }
 
+.why-choose-us {
+  background: #0c4b35;
+}
+.why-choose-us .background {
+  background: url(../assets/pictures/pngegg-bg.png) 0 0 no-repeat, url(../assets/pictures/pngegg-bg-1.png) 100% 0 no-repeat;
+}
+.why-choose-us .layout {
+  padding: 50px 0;
+}
+.why-choose-us .image img {
+  width: 100%;
+}
+.why-choose-us .content {
+  margin-top: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+.why-choose-us .content .col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.why-choose-us .content .paragraph {
+  margin: 30px 0 40px;
+}
+.why-choose-us .content .tags {
+  row-gap: 20px;
+}
+.why-choose-us .content .tags .tag {
+  display: flex;
+}
+.why-choose-us .content .tags .tag .icon {
+  background: #fff url(../assets/tick.svg) no-repeat 50%;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+.why-choose-us .content .tags .tag .description {
+  padding-left: 10px;
+}
+.why-choose-us .content .button {
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #00730c;
+  border: 1px solid #00730c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 30px;
+}
+
 /* laptop */
 @media (min-width: 780px) {
   .services .col-6 {
@@ -711,6 +766,50 @@ section .paragraph {
     fill: #00730c;
     transition: all ease-in-out 0.2s;
   }
+  .why-choose-us .layout {
+    padding: 100px 0;
+  }
+  .why-choose-us .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .why-choose-us .row-reverse {
+    flex-direction: row-reverse;
+  }
+  .why-choose-us .background {
+    background: none;
+  }
+  .why-choose-us .image {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .why-choose-us .content {
+    text-align: left;
+  }
+  .why-choose-us .content .paragraph {
+    margin: 30px 0 50px;
+  }
+  .why-choose-us .content .tags .tag .description {
+    padding-left: 20px;
+  }
+  .why-choose-us .content .button {
+    margin: 0;
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 13px 35px;
+  }
+  .why-choose-us .content .button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #00730c;
+    transition: all ease-in-out 0.2s;
+  }
+  .why-choose-us .content .button:hover svg path {
+    fill: #00730c;
+    transition: all ease-in-out 0.2s;
+  }
 }
 /* desktop - XL */
 @media (min-width: 1600px) {
@@ -734,5 +833,8 @@ section .paragraph {
   }
   .experience {
     background: url(../assets/BG_Img.svg) 0 50% no-repeat;
+  }
+  .why-choose-us .background {
+    background: url(../assets/pictures/pngegg-bg.png) 0 100% no-repeat, url(../assets/pictures/pngegg-bg-1.png) 100% 0 no-repeat;
   }
 }/*# sourceMappingURL=style.css.map */
