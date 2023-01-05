@@ -499,6 +499,49 @@ section .paragraph {
   line-height: 22px;
 }
 
+.call-to-action .layout {
+  background-image: url(../assets/pictures/hand-holding-small-tree-planting.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 36px;
+  border-radius: 5px;
+}
+.call-to-action .layout .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+.call-to-action .layout .content .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+}
+.call-to-action .layout .content .button {
+  background-color: #00730c;
+  border: 1px solid #00730c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  color: #00730c;
+  background-color: #fff;
+  height: 40px;
+  width: 137px;
+  border-color: transparent;
+}
+.call-to-action .layout .content .button::before {
+  content: url(../assets/call-us-green.svg);
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
 /* laptop */
 @media (min-width: 780px) {
   .services .col-6 {
@@ -509,9 +552,45 @@ section .paragraph {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .call-to-action .layout {
+    background-image: url(../assets/pictures/hand-holding-small-tree-planting-L.jpg);
+    height: 247px;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .call-to-action .layout .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    row-gap: 0;
+    margin-right: 3%;
+    margin-left: 35%;
+  }
+  .call-to-action .layout .content .title {
+    font-size: 33px;
+    line-height: 45px;
+    text-align: left;
+    margin-right: 3%;
+  }
+  .call-to-action .layout .content .button {
+    height: 50px;
+    width: 170px;
+    font-size: 18px;
+  }
+  .call-to-action .layout .content .button:hover {
+    background-color: #00730c;
+    color: #ffffff;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+  }
+  .call-to-action .layout .content .button:hover::before {
+    content: url(../assets/call-us.svg);
+  }
+  /* desktop */
 }
-/* desktop */
-@media (min-width: 1200px) {
+@media (min-width: 780px) and (min-width: 1200px) {
   .services .col-3 {
     flex: 0 0 25%;
     max-width: 25%;
