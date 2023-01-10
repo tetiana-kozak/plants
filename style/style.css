@@ -563,7 +563,46 @@ section .paragraph {
   line-height: 20px;
   padding: 10px 30px;
 }
-
+.staff .cards {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.staff .cards .card .background {
+  margin: 15px;
+  position: relative;
+}
+.staff .cards .card .background .photo {
+  width: 100%;
+}
+.staff .cards .card .background .info {
+  background: linear-gradient(6.68deg, #00730c 4.95%, rgba(251, 246, 238, 0) 264.79%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.staff .cards .card .background .info .info-title {
+  font-size: 18px;
+  line-height: 25px;
+}
+.staff .cards .card .background .info .info-subtitle {
+  font-size: 14px;
+  line-height: 22px;
+}
+.staff .cards .card .background .info .icons {
+  margin-top: 20px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 /* laptop */
 @media (min-width: 780px) {
   .services .col-6 {

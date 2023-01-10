@@ -446,4 +446,49 @@ section {
       }
     }
   }
+
+  .cards {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .card {
+      .background {
+        margin: 15px;
+        position: relative;
+        .photo {
+          width: 100%;
+        }
+        .info {
+          background: $gradient-hover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: $typography-white;
+          .info-title {
+            font-size: 18px;
+            line-height: 25px;
+          }
+          .info-subtitle {
+            font-size: 14px;
+            line-height: 22px;
+          }
+          .icons {
+            margin-top: 20px;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .icon {
+            }
+          }
+        }
+      }
+    }
+  }
 }
