@@ -74,15 +74,16 @@
       margin-top: 40px;
 
       .tag {
-        width: calc(100% / 2 - 60px);
-        height: 32px;
+        // width: calc(100% / 2 - 60px);
+        // height: 32px;
         background: $gradient-vertical;
         border-radius: 16px;
         margin-left: 10px;
         font-weight: 400;
         font-size: 10px;
-        line-height: 32px;
+        // line-height: 32px;
         text-align: center;
+        padding: 10px;
 
         span {
           font-weight: 700;
@@ -448,8 +449,7 @@ section {
   }
 
   .cards {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
     .card {
       .background {
         margin: 15px;
@@ -485,6 +485,127 @@ section {
             justify-content: space-between;
             width: 100%;
             .icon {
+            }
+          }
+        }
+      }
+    }
+    .slick-dotted.slick-slider {
+      margin-bottom: 20px;
+    }
+    .slick-dots li button:before {
+      content: "";
+      background-color: $theme-main-color;
+      width: 20px;
+      height: 6px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.clients-saying {
+  background-color: #e6f6ea;
+  // background-size: 100% 50%;
+  box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099),
+    inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
+  backdrop-filter: blur(36.378px);
+  // margin-bottom: 100px;
+  position: relative;
+  height: fit-content;
+  // height: calc(100% - 100px);
+  // height: 650px;
+
+  // .background {
+  //   // background: #e6f6ea;
+  //   background: #fff;
+  //   position: absolute;
+  //   bottom: 0;
+  //   // left: 0;
+  //   // z-index: 0;
+  //   height: 100px;
+  //   width: 100%;
+  // }
+  .section-header {
+    text-align: center;
+    position: relative;
+    // margin-bottom: 300px;
+    // z-index: 10;
+    .title {
+      margin-bottom: 15px;
+      margin-top: 50px;
+    }
+
+    .paragraph {
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .cards {
+    position: relative;
+    // position: absolute;
+    // bottom: -100px;
+    // left: 0;
+    // height: 100%;
+    // z-index: 10;
+    // bottom: -100px;
+    // left: 0;
+    .card {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+      // margin: 0 15px;
+      // height: 450px;
+      .background {
+        background-color: $main-bgr-color;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        padding: 20px;
+        margin: 0 15px;
+        .image {
+          position: relative;
+          width: 135px;
+          margin-bottom: 30px;
+          img {
+            position: relative;
+            z-index: 10;
+          }
+          .background {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: $gradient-hover;
+            border-radius: 30px;
+            width: 100%;
+            height: 135px;
+            z-index: 1;
+          }
+        }
+        .content {
+          .feedback {
+            font-size: 14px;
+            line-height: 22px;
+            padding-bottom: 15px;
+          }
+          .author {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .name {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              color: $typography-black-color;
+              .job {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: $typography-gray;
+              }
+            }
+            .rate {
+              padding-right: 16px;
+              display: flex;
             }
           }
         }

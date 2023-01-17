@@ -240,15 +240,13 @@ header .main-navbar .layout .actions .wrapper:hover .navigation {
   margin-top: 40px;
 }
 .general .content .tags-s .tag {
-  width: calc(50% - 60px);
-  height: 32px;
   background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
   border-radius: 16px;
   margin-left: 10px;
   font-weight: 400;
   font-size: 10px;
-  line-height: 32px;
   text-align: center;
+  padding: 10px;
 }
 .general .content .tags-s .tag span {
   font-weight: 700;
@@ -564,8 +562,7 @@ section .paragraph {
   padding: 10px 30px;
 }
 .staff .cards {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
 }
 .staff .cards .card .background {
   margin: 15px;
@@ -602,6 +599,101 @@ section .paragraph {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.staff .cards .slick-dotted.slick-slider {
+  margin-bottom: 20px;
+}
+.staff .cards .slick-dots li button:before {
+  content: "";
+  background-color: #00730c;
+  width: 20px;
+  height: 6px;
+  border-radius: 8px;
+}
+
+.clients-saying {
+  background-color: #e6f6ea;
+  box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099), inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
+  -webkit-backdrop-filter: blur(36.378px);
+          backdrop-filter: blur(36.378px);
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.clients-saying .section-header {
+  text-align: center;
+  position: relative;
+}
+.clients-saying .section-header .title {
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+.clients-saying .section-header .paragraph {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.clients-saying .cards {
+  position: relative;
+}
+.clients-saying .cards .card .background {
+  background-color: #ffffff;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  padding: 20px;
+  margin: 0 15px;
+}
+.clients-saying .cards .card .background .image {
+  position: relative;
+  width: 135px;
+  margin-bottom: 30px;
+}
+.clients-saying .cards .card .background .image img {
+  position: relative;
+  z-index: 10;
+}
+.clients-saying .cards .card .background .image .background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(6.68deg, #00730c 4.95%, rgba(251, 246, 238, 0) 264.79%);
+  border-radius: 30px;
+  width: 100%;
+  height: 135px;
+  z-index: 1;
+}
+.clients-saying .cards .card .background .content .feedback {
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 15px;
+}
+.clients-saying .cards .card .background .content .author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients-saying .cards .card .background .content .author .name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+}
+.clients-saying .cards .card .background .content .author .name .job {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #676767;
+}
+.clients-saying .cards .card .background .content .author .rate {
+  padding-right: 16px;
+  display: flex;
+}
+
+/* mobile - xs */
+@media (max-width: 300px) {
+  header .main-navbar .layout .actions .button {
+    display: none;
+  }
 }
 /* laptop */
 @media (min-width: 780px) {
@@ -1078,6 +1170,9 @@ section .paragraph {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .staff .cards {
+    margin-top: 50px;
   }
 }
 /* desktop - XL */

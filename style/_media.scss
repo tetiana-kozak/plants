@@ -1,3 +1,10 @@
+/* mobile - xs */
+@media (max-width: 300px) {
+  header .main-navbar .layout .actions .button {
+    display: none;
+  }
+}
+
 /* laptop */
 @media (min-width: 780px) {
   .services .col-6 {
@@ -568,6 +575,9 @@
             height: fit-content;
           }
         }
+      }
+      .cards {
+        margin-top: 50px;
       }
     }
   }
