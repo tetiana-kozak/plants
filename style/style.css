@@ -651,7 +651,7 @@ section .paragraph {
   position: relative;
   z-index: 10;
 }
-.clients-saying .cards .card .background .image .background {
+.clients-saying .cards .card .background .image .background-rect {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -784,9 +784,9 @@ section .paragraph {
   .call-to-action .layout .content .button:hover::before {
     content: url(../assets/call-us.svg);
   }
-  /* desktop */
 }
-@media (min-width: 780px) and (min-width: 1200px) {
+/* desktop */
+@media (min-width: 1200px) {
   .services .col-3 {
     flex: 0 0 25%;
     max-width: 25%;
@@ -1216,6 +1216,58 @@ section .paragraph {
   }
   .staff .cards {
     margin-top: 50px;
+  }
+  .clients-saying .section-header {
+    text-align: left;
+  }
+  .clients-saying .section-header .title {
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+  .clients-saying .section-header .paragraph {
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .clients-saying .cards .card .background {
+    padding: 30px 25px;
+    margin: 0 15px;
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .clients-saying .cards .card .background .image {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 276px;
+    margin-bottom: 0;
+  }
+  .clients-saying .cards .card .background .image img {
+    position: relative;
+    margin: 0;
+    height: 276px;
+  }
+  .clients-saying .cards .card .background .image .background-rect {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+  }
+  .clients-saying .cards .card .background .content .feedback {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 27px;
+  }
+  .clients-saying .cards .card .background .content .author .name {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .clients-saying .cards .card .background .content .author .name .job {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .clients-saying .cards .card .background .content .author .rate {
+    padding-right: 0;
   }
 }
 /* desktop - XL */
