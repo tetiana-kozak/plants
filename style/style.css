@@ -1264,6 +1264,16 @@ section .paragraph {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .staff .section-header .content .button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #00730c;
+    transition: all ease-in-out 0.2s;
+  }
+  .staff .section-header .content .button:hover svg path {
+    fill: #00730c;
+    transition: all ease-in-out 0.2s;
+  }
   .staff .cards {
     margin-top: 50px;
   }
