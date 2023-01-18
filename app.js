@@ -69,23 +69,18 @@ $(document).ready(function () {
 
 // FAQ spoiler
 
-const spoilerQuestions = document.querySelectorAll(".spoiler-header-box");
-const spoilerAnswers = document.querySelectorAll(".spoiler-content");
-const spoilerIcons = document.querySelectorAll(".spoiler-icon");
+function spoiler() {
+  const spoilerQuestions = document.querySelectorAll(".spoiler-header-box");
+  const spoilerAnswers = document.querySelectorAll(".spoiler-content");
+  const spoilerIcons = document.querySelectorAll(".spoiler-icon");
 
-spoilerQuestions.forEach((item, i) => {
-  // console.log(item);
-  item.addEventListener("click", function () {
-    // console.log("item :>> ", item);
-    spoilerAnswers[i].classList.toggle("active-spoiler");
-    item.classList.toggle("active-spoiler-header");
-    spoilerIcons[i].classList.toggle("close-icon");
-
-    // spoilerIcons[i].setAttribute("class", "close-icon");
-    // spoilerAnswers[i].style.display = "block";
+  spoilerQuestions.forEach((item, i) => {
+    item.addEventListener("click", function () {
+      spoilerAnswers[i].classList.toggle("active-spoiler");
+      item.classList.toggle("active-spoiler-header");
+      spoilerIcons[i].classList.toggle("close-icon");
+    });
   });
-});
+}
 
-// function openSpoiler() {
-
-// }
+spoiler();
