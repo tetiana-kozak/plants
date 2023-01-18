@@ -726,9 +726,10 @@ section .paragraph {
 }
 
 .spoiler-icon {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-image: url(../assets/plus.svg);
+  background-repeat: no-repeat;
 }
 
 .spoiler-content {
