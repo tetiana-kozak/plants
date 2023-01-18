@@ -1,3 +1,5 @@
+//slider Staff
+
 $(document).ready(function () {
   $(".slider-staff").slick({
     dots: true,
@@ -39,6 +41,8 @@ $(document).ready(function () {
   });
 });
 
+//slider Feedbacks
+
 $(document).ready(function () {
   $(".slider-feedbacks").slick({
     dots: true,
@@ -62,3 +66,26 @@ $(document).ready(function () {
     ],
   });
 });
+
+// FAQ spoiler
+
+const spoilerQuestions = document.querySelectorAll(".spoiler-header-box");
+const spoilerAnswers = document.querySelectorAll(".spoiler-content");
+const spoilerIcons = document.querySelectorAll(".spoiler-icon");
+
+spoilerQuestions.forEach((item, i) => {
+  // console.log(item);
+  item.addEventListener("click", function () {
+    // console.log("item :>> ", item);
+    spoilerAnswers[i].classList.toggle("active-spoiler");
+    item.classList.toggle("active-spoiler-header");
+    spoilerIcons[i].classList.toggle("close-icon");
+
+    // spoilerIcons[i].setAttribute("class", "close-icon");
+    // spoilerAnswers[i].style.display = "block";
+  });
+});
+
+// function openSpoiler() {
+
+// }

@@ -56,7 +56,44 @@
       }
     }
   }
+
+  .FAQ {
+
+    .spoiler-wrapper {
+      margin-top: 42px;
+      .spoiler {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .spoiler-header-box {
+    border-radius: 5px;
+    padding: 0 30px;
+    column-gap: 20px;
+
+    .spoiler-header {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &:hover {
+      background: $theme-main-color;
+      color: $typography-white;
+      transition: all ease-in-out 0.2s;
+      .spoiler-icon {
+        background-image: url(../assets/cross.svg);
+      }
+    }
+  }
+
+  .spoiler-content {
+    padding: 20px 30px 0 30px;
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
+
 /* desktop */
 @media (min-width: 1200px) {
   .services .col-3 {
@@ -582,7 +619,6 @@
   }
 
   .clients-saying {
-
     .section-header {
       text-align: left;
       .title {
@@ -608,7 +644,7 @@
             width: fit-content;
             height: 276px;
             margin-bottom: 0;
-            
+
             img {
               position: relative;
               margin: 0;
@@ -641,6 +677,22 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .FAQ {
+    .section-header {
+      text-align: left;
+      position: relative;
+      .title {
+        margin-bottom: 15px;
+      }
+
+      .paragraph {
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 22px;
       }
     }
   }
