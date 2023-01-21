@@ -64,6 +64,24 @@
         margin-bottom: 20px;
       }
     }
+
+    .FAQ-layout {
+      display: flex;
+      .FAQ-content {
+        width: 60%;
+        margin-right: 10px;
+      }
+
+      .FAQ-image {
+        display: block;
+        width: 40%;
+        margin-top: 45px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 
   .spoiler-header-box {
@@ -687,15 +705,26 @@
   .FAQ {
     .section-header {
       text-align: left;
-      position: relative;
       .title {
-        margin-bottom: 15px;
+        font-size: 45px;
+        line-height: 61px;
+        margin-bottom: 30px;
       }
 
       .paragraph {
         margin-bottom: 40px;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .FAQ-layout {
+      .FAQ-image {
+        margin: 0;
+        height: 530px;
+        img {
+          height: 100%;
+        }
       }
     }
   }

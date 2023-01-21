@@ -584,9 +584,16 @@ section {
 }
 
 .FAQ {
+  .FAQ-layout {
+    .FAQ-content {
+    }
+
+    .FAQ-image {
+      display: none;
+    }
+  }
   .section-header {
     text-align: center;
-    position: relative;
     .title {
       margin-bottom: 15px;
     }

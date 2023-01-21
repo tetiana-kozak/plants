@@ -688,9 +688,11 @@ section .paragraph {
   display: flex;
 }
 
+.FAQ .FAQ-layout .FAQ-image {
+  display: none;
+}
 .FAQ .section-header {
   text-align: center;
-  position: relative;
 }
 .FAQ .section-header .title {
   margin-bottom: 15px;
@@ -810,6 +812,21 @@ section .paragraph {
   }
   .FAQ .spoiler-wrapper .spoiler {
     margin-bottom: 20px;
+  }
+  .FAQ .FAQ-layout {
+    display: flex;
+  }
+  .FAQ .FAQ-layout .FAQ-content {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .FAQ .FAQ-layout .FAQ-image {
+    display: block;
+    width: 40%;
+    margin-top: 45px;
+  }
+  .FAQ .FAQ-layout .FAQ-image img {
+    width: 100%;
   }
   .spoiler-header-box {
     border-radius: 5px;
@@ -1331,15 +1348,23 @@ section .paragraph {
   }
   .FAQ .section-header {
     text-align: left;
-    position: relative;
   }
   .FAQ .section-header .title {
-    margin-bottom: 15px;
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 30px;
   }
   .FAQ .section-header .paragraph {
     margin-bottom: 40px;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .FAQ .FAQ-layout .FAQ-image {
+    margin: 0;
+    height: 530px;
+  }
+  .FAQ .FAQ-layout .FAQ-image img {
+    height: 100%;
   }
 }
 /* desktop - XL */
