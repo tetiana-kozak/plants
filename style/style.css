@@ -755,6 +755,83 @@ section .paragraph {
   background-image: url(../assets/cross.svg);
 }
 
+.articles .section-header {
+  text-align: center;
+}
+.articles .section-header .title {
+  margin-bottom: 15px;
+}
+.articles .section-header .paragraph {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.articles .articles-slider-box .articles-slider .article {
+  width: 450px;
+  color: #ffffff;
+  background: url(../assets/pictures/woman-holding-plants.png) no-repeat;
+  border-radius: 10px;
+}
+.articles .articles-slider-box .articles-slider .article .background {
+  border-radius: 10px;
+  background: #0b0b0b;
+  opacity: 0.8;
+}
+.articles .articles-slider-box .articles-slider .article .background .content {
+  padding: 100px 30px 70px 30px;
+}
+.articles .articles-slider-box .articles-slider .article .background .content .tag {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #00730c;
+  background: #d9f1e0;
+  margin-bottom: 75px;
+}
+.articles .articles-slider-box .articles-slider .article .background .content .heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.articles .articles-slider-box .articles-slider .article .background .content .paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.articles .articles-slider-box .articles-slider .article .background .footer {
+  padding: 30px 40px;
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.articles .articles-slider-box .articles-slider .article .background .footer .date {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: uppercase;
+}
+.articles .articles-slider-box .articles-slider .article .background .footer .author {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.articles .articles-slider-box .articles-slider .article .background .footer .author::before {
+  content: url(../assets/admin.svg);
+  padding-right: 10px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 /* mobile - xs */
 @media (max-width: 300px) {
   header .main-navbar .layout .actions .button {

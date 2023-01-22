@@ -658,3 +658,86 @@ section {
 .close-icon {
   background-image: url(../assets/cross.svg);
 }
+
+.articles {
+  .section-header {
+    text-align: center;
+    .title {
+      margin-bottom: 15px;
+    }
+
+    .paragraph {
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .articles-slider-box {
+    .articles-slider {
+      .article {
+        width: 450px;
+        color: $typography-white;
+        background: url(../assets/pictures/woman-holding-plants.png) no-repeat;
+        border-radius: 10px;
+        .background {
+          border-radius: 10px;
+          background: #0b0b0b;
+          opacity: 0.8;
+          .content {
+            padding: 100px 30px 70px 30px;
+            .tag {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 30px;
+              padding: 0 20px;
+              width: fit-content;
+              color: $theme-main-color;
+              background: #d9f1e0;
+              margin-bottom: 75px;
+            }
+            .heading {
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 33px;
+              text-transform: capitalize;
+              margin-bottom: 30px;
+            }
+            .paragraph {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
+          .footer {
+            padding: 30px 40px;
+            border-top: 1px solid #fff;
+            display: flex;
+            justify-content: space-between;
+            .date {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              text-decoration-line: underline;
+              text-transform: uppercase;
+            }
+            .author {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 30px;
+              text-decoration-line: underline;
+              
+              &::before{
+                content: url(../assets/admin.svg);
+                padding-right: 10px;
+                text-decoration-line: underline;
+                // background: url(../assets/admin.svg) no-repeat contain;
+                // background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
