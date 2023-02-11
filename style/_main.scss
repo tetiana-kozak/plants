@@ -676,68 +676,132 @@ section {
   .articles-slider-box {
     .articles-slider {
       .article {
-        width: 450px;
         color: $typography-white;
-        background: url(../assets/pictures/woman-holding-plants.png) no-repeat;
-        border-radius: 10px;
-        .background {
+        
+        .background-img {
+          background: url(../assets/pictures/woman-holding-plants.png) no-repeat;
           border-radius: 10px;
-          background: #0b0b0b;
-          opacity: 0.8;
-          .content {
-            padding: 100px 30px 70px 30px;
-            .tag {
-              font-weight: 600;
-              font-size: 18px;
-              line-height: 30px;
-              padding: 0 20px;
-              width: fit-content;
-              color: $theme-main-color;
-              background: #d9f1e0;
-              margin-bottom: 75px;
+          height: fit-content;
+          margin: 10px;
+
+          .background {
+            background: #0b0b0b;
+            opacity: 0.8;
+            .content {
+              padding: 70px 30px 70px 30px;
+              .tag {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 30px;
+                padding: 0 20px;
+                width: fit-content;
+                color: $theme-main-color;
+                background: #d9f1e0;
+                margin-bottom: 30px;
+              }
+              .heading {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+              }
+              .paragraph {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+              }
             }
-            .heading {
-              font-weight: 700;
-              font-size: 24px;
-              line-height: 33px;
-              text-transform: capitalize;
-              margin-bottom: 30px;
-            }
-            .paragraph {
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 30px;
-            }
-          }
-          .footer {
-            padding: 30px 40px;
-            border-top: 1px solid #fff;
-            display: flex;
-            justify-content: space-between;
-            .date {
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 24px;
-              text-decoration-line: underline;
-              text-transform: uppercase;
-            }
-            .author {
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 30px;
-              text-decoration-line: underline;
-              
-              &::before{
-                content: url(../assets/admin.svg);
-                padding-right: 10px;
+            .footer {
+              padding: 30px 40px;
+              border-top: 1px solid #fff;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .date {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
                 text-decoration-line: underline;
-                // background: url(../assets/admin.svg) no-repeat contain;
-                // background-size: contain;
+                text-transform: uppercase;
+              }
+              .author {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                border-bottom: 1px white solid;
+  
+                &::before {
+                  content: url(../assets/admin.svg);
+                  padding-right: 10px;
+                }
+              }
+            }
+
+            &:hover {
+              background: #fff;
+              opacity: 1;
+              transition: all ease-in-out .2s;
+              cursor: pointer;
+              filter: drop-shadow(2px 10px 20px rgba(51, 51, 51, 0.1));
+              
+              .content {
+                .heading {
+                  color: $theme-main-color;
+                }
+                .paragraph {
+                  color: $typography-gray;
+                }
+              }
+              .footer {
+                color: $typography-gray;
+                border-top: 1px solid #E3E3E3;
+                .author {
+  
+                &::before {
+                  content: url(../assets/admin-green.svg);
+                }
+              }
               }
             }
           }
         }
+        
       }
+    }
+
+    .slick-dots {
+      bottom: -60px;
+    }
+
+    .slick-list.draggable {
+      padding-bottom: 30px;
+    }
+
+    .slick-dotted.slick-slider {
+      margin-bottom: 30px;
+    }
+
+    .slick-dots li button:before {
+      width: 50px;
+      border-radius: 0;
+    }
+
+    .slick-dots li button {
+      width: 50px;
+    }
+
+    .slick-dots li {
+      width: 50px;
+    }
+
+    .slick-dots li button:before {
+      background: #FBEEE7;
+      opacity: 1;
+    }
+    
+    .slick-dots li.slick-active button:before {
+      background: $theme-main-color;
     }
   }
 }
